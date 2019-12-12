@@ -42,16 +42,16 @@ public class StudentRegistrationApplication extends SpringBootServletInitializer
 •	Data through Jsp forms are recieved by the application through several RequestMappings.
 •	StudentRegistrationController.java Class Handled All the page Requests and their corresponding mappings.
 •	The RESTful API is done by receiving a set of requests and then send appropriate data back to the request.
-•	The API is then compiled into a JAR file using maven, which adds only the dependencies that are used , and ignore the ones that are not specified.
+•	The API is then compiled into a WAR file using maven, which adds only the dependencies that are used , and ignore the ones that are not specified.
 •	Since we have a MySQL Connection established , we need to provide the service in pivotal dashboard.
 •	This is done by enabling ClearMySQL Database service by giving an appropriate Instance Name.
-•	The API is then hosted on Cloud Foundry by pushing the JAR file to the pivotal dashboard. 
+•	The API is then hosted on Cloud Foundry by pushing the WAR file to the pivotal dashboard. 
 
 //To login in Terminal Type cf then follow these commands
  
 >> cf login -a api.run.pivotal.io
 //To push application
->> cf push studentRegistration -p target\studentRegistration.jar
+>> cf push studentRegistration -p target\studentRegistration.war
 //To logout
 >> cf logout
 
