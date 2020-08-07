@@ -1,10 +1,10 @@
 # Spring-Boot-Form-Handling
 
-•	The Spring Boot Application connects to the MySQL server using JPA Repository.
-•	JPA Repository offers abstraction for updating , deleting , inserting object into the database. We create a list of objects that gets updated in the database.
-•	The functions that can be used are : JPARepository.save() and JPARepository.get().
-•	This can be achieved by extending the repository to JPARepository class.
-•	src/main/resource/application.properties is used to establish Connection to Database.
+-	The Spring Boot Application connects to the MySQL server using JPA Repository.
+-	JPA Repository offers abstraction for updating , deleting , inserting object into the database. We create a list of objects that gets updated in the database.
+-	The functions that can be used are : JPARepository.save() and JPARepository.get().
+-	This can be achieved by extending the repository to JPARepository class.
+-	src/main/resource/application.properties is used to establish Connection to Database.
 /*spring.datasource.url=jdbc:mysql://localhost:3306/studreg?autoReconnect=true&useSSL=false
 spring.datasource.username=root
 spring.datasource.password=pass123
