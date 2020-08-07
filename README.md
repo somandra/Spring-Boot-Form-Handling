@@ -8,11 +8,13 @@
 /*spring.datasource.url=jdbc:mysql://localhost:3306/studreg?autoReconnect=true&useSSL=false
 spring.datasource.username=root
 spring.datasource.password=pass123
-
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 spring.mvc.view.prefix:/WEB-INF/views/
 spring.mvc.view.suffix:.jsp*/
-•	To run the application run com.studentRegistration/StudentRegistrationApplication.java as Java Application.
+
+
+-	To run the application run com.studentRegistration/StudentRegistrationApplication.java as Java Application.
+
 /*package com.studentRegistration;
 
 import org.springframework.boot.SpringApplication;
@@ -38,14 +40,14 @@ public class StudentRegistrationApplication extends SpringBootServletInitializer
 */
 
 
-•	Once Server Started open browser go to localhost:8080/enrol to initiate application. 
-•	Data through Jsp forms are recieved by the application through several RequestMappings.
-•	StudentRegistrationController.java Class Handled All the page Requests and their corresponding mappings.
-•	The RESTful API is done by receiving a set of requests and then send appropriate data back to the request.
-•	The API is then compiled into a WAR file using maven, which adds only the dependencies that are used , and ignore the ones that are not specified.
-•	Since we have a MySQL Connection established , we need to provide the service in pivotal dashboard.
-•	This is done by enabling ClearMySQL Database service by giving an appropriate Instance Name.
-•	The API is then hosted on Cloud Foundry by pushing the WAR file to the pivotal dashboard. 
+-	Once Server Started open browser go to localhost:8080/enrol to initiate application. 
+-	Data through Jsp forms are recieved by the application through several RequestMappings.
+-	StudentRegistrationController.java Class Handled All the page Requests and their corresponding mappings.
+-	The RESTful API is done by receiving a set of requests and then send appropriate data back to the request.
+-	The API is then compiled into a WAR file using maven, which adds only the dependencies that are used , and ignore the ones that are not specified.
+-	Since we have a MySQL Connection established , we need to provide the service in pivotal dashboard.
+-	This is done by enabling ClearMySQL Database service by giving an appropriate Instance Name.
+-	The API is then hosted on Cloud Foundry by pushing the WAR file to the pivotal dashboard. 
 
 //To login in Terminal Type cf then follow these commands
  
