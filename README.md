@@ -49,11 +49,11 @@ public class StudentRegistrationApplication extends SpringBootServletInitializer
 -	This is done by enabling ClearMySQL Database service by giving an appropriate Instance Name.
 -	The API is then hosted on Cloud Foundry by pushing the WAR file to the pivotal dashboard. 
 
-//To login in Terminal Type cf then follow these commands
+>>To login in Terminal Type cf then follow these commands
  
 >> cf login -a api.run.pivotal.io
-//To push application
+>>To push application
 >> cf push studentRegistration -p target\studentRegistration.war
-//To logout
+>>To logout
 >> cf logout
 
